@@ -1,18 +1,13 @@
-import { defineConfig } from 'astro/config';
-import tailwind from "@astrojs/tailwind";
+import { defineConfig } from "astro/config";
 import sitemap from "@astrojs/sitemap";
 import react from "@astrojs/react";
-import cloudflare from "@astrojs/cloudflare";
+import tailwindcss from "@tailwindcss/vite";
 
 // https://astro.build/config
 export default defineConfig({
-  integrations: [
-    tailwind({
-      applyBaseStyles: true
-    }),
-    sitemap(),
-    react()
-  ],
+  integrations: [sitemap(), react()],
   output: "server",
-  adapter: cloudflare()
+  vite: {
+    plugins: [tailwindcss()],
+  },
 });

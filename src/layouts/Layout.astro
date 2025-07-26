@@ -1,26 +1,26 @@
 ---
-import '@fontsource/poppins';
-import '@/styles/globals.css'
+import "@fontsource/poppins";
+import "@/styles/globals.css";
 
 interface Props {
-	title?: string;
+  title?: string;
   description: string;
 }
 
-const title = Astro.props.title
-const description = Astro.props.description
+const title = Astro.props.title;
+const description = Astro.props.description;
 ---
 
 <!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="description" content={description} />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/assets/images/avatar.png" />
-		<title>{title}</title>
-	</head>
-	<body class="px-[10vw] py-[10vh] space-y-8">
-		<slot />
-	</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content={description} />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/assets/images/avatar.png" />
+    <title>{title}</title>
+  </head>
+  <body class="px-[10vw] py-[10vh] space-y-8">
+    <slot />
+  </body>
 </html>
