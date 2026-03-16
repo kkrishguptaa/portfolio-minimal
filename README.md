@@ -1,4 +1,4 @@
-> I'm building a larger collection of portfolios at [kkrishguptaa/hivemind], so this will be archived!
+> I'm building a larger collection of portfolios at [kkrishguptaa/hivemind](https://github.com/kkrishguptaa/hivemind), so this will be archived!
 
 # portfolio-minimal
 
